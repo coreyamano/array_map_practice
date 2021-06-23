@@ -15,6 +15,15 @@ p fire
 #  2. Start with an array of strings and create a new array with each string upcased.
 #     For example, ["hello", "goodbye"] becomes ["HELLO", "GOODBYE"].
 
+words = ["hello", "goodbye"]
+caps = []
+
+words.each do |word|
+  caps << word.upcase
+end
+
+p caps
+
 #  3. Start with an array of hashes and create a new array of string values from each hash's :name key.
 #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes ["Alice", "Blane"].
 
