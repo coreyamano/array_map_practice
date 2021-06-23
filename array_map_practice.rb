@@ -50,6 +50,15 @@ p seven_up
 #  5. Start with an array of strings and create a new array with each string's length.
 #     For example, ["hello", "goodbye"] becomes [5, 7].
 
+aliens = ["hello", "goodbye"]
+alien_lengths = []
+
+aliens.each do |alien|
+  alien_lengths << alien.length
+end
+
+p alien_lengths
+
 #  6. Start with an array of hashes and create a new array of number values from each hash's :age key.
 #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [27, 16].
 
