@@ -86,6 +86,15 @@ p halves
 #  8. Start with an array of strings and create a new array with each string's first letter only.
 #     For example, ["hello", "goodbye"] becomes ["h", "g"].
 
+greetings = ["hello", "goodbye"]
+first_letters = []
+
+greetings.each do |greeting|
+  first_letters << greeting[0]
+end
+
+p first_letters
+
 # 9.  Start with an array of hashes and create a new array of number values from each hash's :age key times 2.
 #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [54, 32].
 
