@@ -74,6 +74,15 @@ p ages
 #  7. Start with an array of numbers and create a new array with each number divided by 2.
 #     For example, [1, 2, 3] becomes [0.5, 1.0, 1.5].
 
+circles = [1,2,3]
+halves = []
+
+circles.each do |circle|
+  halves << circle/2.0
+end
+
+p halves
+
 #  8. Start with an array of strings and create a new array with each string's first letter only.
 #     For example, ["hello", "goodbye"] becomes ["h", "g"].
 
