@@ -98,5 +98,14 @@ p first_letters
 # 9.  Start with an array of hashes and create a new array of number values from each hash's :age key times 2.
 #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [54, 32].
 
+friends = [{name: "Alice", age: 27}, {name: "Blane", age: 16}]
+double_ages = []
+
+friends.each do |friend|
+  double_ages << friend[:age] * 2
+end
+
+p double_ages
+
 # 10. Start with an array of numbers and create a new array with each number converted into a string.
 #     For example, [1, 2, 3] becomes ["1", "2", "3"].
