@@ -23,13 +23,36 @@ console.log(capWords);
 // 3. Start with an array of hashes and create a new array of string values from each hash's :name key.
 //    For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes ["Alice", "Blane"].
 
+var people = [{name: "Alice", age: 27}, {name: "Blane", age: 16}];
+var names = [];
+
+people.forEach( function(person) {
+  names.push(person.name);
+});
+
+console.log(names);
 
 // 4. Start with an array of numbers and create a new array with each number plus 7.
 //    For example, [1, 2, 3] becomes [8, 9, 10].
 
+var nums = [1, 2, 3];
+var plusSevens = [];
+
+nums.forEach( function(num) {
+  plusSevens.push(num + 7);
+});
+console.log(plusSevens);
 
 // 5. Start with an array of strings and create a new array with each string's length.
 //    For example, ["hello", "goodbye"] becomes [5, 7].
+
+var salutations = ["hello", "goodbye"];
+var lengths = [];
+
+salutations.forEach(function(sal) {
+  lengths.push(sal.length);
+});
+console.log(lengths);
 
 // 6. Start with an array of hashes and create a new array of number values from each hash's :age key.
 //    For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [27, 16].
